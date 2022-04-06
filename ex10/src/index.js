@@ -1,14 +1,34 @@
-//Only change code below this line
-var myMusic = {
-    name: "Simba",
-    legs: 4,
-   tails: 1,
-   roar: "roar-roar"
-};
-function myFunction(propName) {
-    delete lion [propName];
-    return lion;
+function myFunction() {
+    var myMusic = {
+        001: {
+            artist: "Billy Joel",
+            title: "Piano Man",
+            relase_year: 1973,
+            formats: {
+                1: "CD",
+                2: "8T",
+                3: "LP"
+            },
+            gold: true
+        },
+        002: {
+            // Add a record here
+            artist: "Siddharta",
+            title: "Nord",
+            relase_year: 2001,
+            id: 100,
+            formats: {
+                1: "CD",
+                2: "Vinyl",
+                3: "MC"
+            },
+            gold: true
+        },
+    };
+    return myMusic;
 }
-console.log(myFunction("roar"));
-// Only change code above this line
+myFunction()[2];
+myFunction()[1];
+console.log(myFunction()[2]);
+console.log(myFunction()[1]);
 module.exports = myFunction;
